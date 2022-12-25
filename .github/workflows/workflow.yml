@@ -1,0 +1,14 @@
+name: Build Linux Kernel
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: linux
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Java Project
+        run: |
+          mvn clean package
+          sudo dnf install tree
+          tree

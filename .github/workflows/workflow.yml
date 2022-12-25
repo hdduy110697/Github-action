@@ -11,5 +11,5 @@ jobs:
         run: |
           sudo apt install tree
           echo $GITHUB_WORKSPACE
-          run: cp -rp /README.md /src/.
+          cp -rp /README.md /src/.
           tree

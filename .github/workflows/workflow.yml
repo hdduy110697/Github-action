@@ -10,6 +10,6 @@ jobs:
       - name: Build Java Project
         run: |
           sudo apt install tree
-          ECHO $GITHUB_WORKSPACE
+          echo $GITHUB_WORKSPACE
           run: cp -rp /README.md /src/.
           tree

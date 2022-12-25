@@ -9,6 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build Java Project
         run: |
-          mvn clean package
           sudo dnf install tree
           tree
